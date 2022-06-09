@@ -1,0 +1,67 @@
+.heading{
+    
+    background-color:rgb(23, 27, 27);
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index:2;
+}
+.logo{
+    margin-top:10px;
+    margin-left:10px;
+    margin-right:20px;
+    height:40px;
+    width:100px;
+}
+.search{
+    border: none;
+    border-radius: 2px;
+    height:30px;
+    width:100%;
+    padding:5px;
+}
+
+.icons{
+    background-color: orange;
+   border-radius:2px;
+    margin-left:-40px;
+    padding:8px;
+}
+.searchbox{
+    margin-left:20px;
+    display:flex;
+    flex:0.99;
+}
+.search:focus{
+  outline-color: rgb(239, 102, 17);
+}
+
+.lin{
+   text-decoration: none;
+   color:white; 
+   
+}
+
+.hel{
+    font-size: small;
+}
+.ind{
+    margin-left:10px;
+    height:30px;
+    width:50px;
+    border-radius: 2px;
+}
+.sign .link{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color:white;
+    margin-left:10px;
+}
+.car{
+    align-items: center;
+    margin-left:10px;
+    margin-right:5px;
+    font-size: 15px;
+}

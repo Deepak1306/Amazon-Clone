@@ -1,0 +1,27 @@
+.cproduct{
+    width:180px;
+    height:180px;
+    object-fit: contain;
+}
+.cart1{
+    background-color: whitesmoke;
+    padding: 10px;
+    display: flex;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.cartinfo{
+    margin-left:10px;
+    display: flex;
+    flex-direction: column;
+}
+.btn1{
+    background-color:#f0c14b;
+    height:20px;
+    border-radius: 2px;
+    border: 1px solid;
+    border-color:#a88734 #9c7e31 #856a29;
+    width:200px;
+    margin-top:10px;
+}

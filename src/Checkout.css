@@ -1,0 +1,11 @@
+.add{
+    width: 80%;
+    object-fit:contain;
+}
+.empty{
+    background-color: whitesmoke;
+}
+.check{
+    display: flex;
+    margin-right:10px;
+}
