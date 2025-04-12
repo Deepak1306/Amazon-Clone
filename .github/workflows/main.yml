@@ -26,7 +26,7 @@ jobs:
           npm run test || true
       - name: Run server
         run: |
-          npm run start &
-          npm wait-on http://localhost:3000
+          npm run start & 
+          npm wait-on http://localhost:3000 --timeout 60000
       
         
