@@ -1,7 +1,6 @@
 name: Node build
 on: 
   push:
-    branches: main
   pull_request:
     branches: "*"
   workflow_dispatch:
@@ -17,6 +16,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-      - run: npm ci
+      - run: npm ci --force
       - run: npm run build
       - run: npm test
