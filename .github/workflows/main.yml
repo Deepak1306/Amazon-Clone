@@ -26,7 +26,13 @@ jobs:
           npm run test || true
       - name: Run server
         run: |
-          npm run start & 
-          npm wait-on http://localhost:3000 --timeout 60000
+          npm start > react.log 2>&1 &
+          SERVER_PID=$!
+
+          echo "Waiting for server to be available..."
+          npx wait-on http://localhost:3000 --timeout 60000
+
+          echo "Server started successfully. Killing it now..."
+          kill $SERVER_PID
       
         
