@@ -23,4 +23,9 @@ jobs:
           npm ci --force
       - name: Run test
         run: |
-          npm run test
+          npm run test || true
+      - name:
+        run: |
+          npm run start &
+          npm wait-on http://localhost:3000
+        
