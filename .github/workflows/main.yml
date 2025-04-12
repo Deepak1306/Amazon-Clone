@@ -23,4 +23,4 @@ jobs:
           npm ci --force
       - name: Run build
         run: |
-          npm run build
+          npm run build --verbose
